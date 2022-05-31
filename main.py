@@ -21,7 +21,7 @@ for i in range(len(place_names)):
     print("The temperature in", place_names[i], "is", round(current_temperature - 273.15, 1), "degrees C")
 
 # Plot each location on a map and add markers that, when hovered over, show the current temperature
-gmaps_apikey = 'AIzaSyBuj8wnaYNhSkunlu_h17jUqDsQGN1rFi0'
+gmaps_apikey = '**API key goes here Mr Zilani**'
 gmap1 = gmplot.GoogleMapPlotter(54.4609, -3.0886, 6, apikey=gmaps_apikey)
 for i in range(len(place_names)):
     gmap1.marker(latitudes[i], longitudes[i], title=place_names[i] + " " + str(succinct_weather[i]) + " C",
